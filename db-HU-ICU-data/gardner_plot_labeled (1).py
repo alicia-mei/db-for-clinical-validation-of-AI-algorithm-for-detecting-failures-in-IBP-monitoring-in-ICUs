@@ -10,6 +10,7 @@ ksi = [0.0427474591250554, 0.0428137428192665, 0.0429131683605834, 0.04300707026
 # --- Dados dos cateteres com classificação (da tabela) ---
 # Ordem original do scatter: fn_uti e ksi_uti
 # Mapeando cada ponto para o cateter correto pela tabela
+# Adicionar catéteres novos aqui
 cateteres = [
     {"id": 5,  "fn": 14.88, "zeta": 0.253341, "class": "Inadequate"},
     {"id": 8,  "fn": 17.43, "zeta": 0.375868, "class": "Adequate"},
