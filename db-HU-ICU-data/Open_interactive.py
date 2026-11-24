@@ -5,7 +5,8 @@ import numpy as np
 import os
 import re
 
-file = "10.10.10.129_20260407_12.h5"
+# Coloque o nome do arquivo .H5 aqui (ex: file = "10.10.10.129_20260407_01.h5")
+file = ""
 
 # Pasta de saída: extrai só os números do nome do arquivo (ex: "10_10_10_131_20260310_17")
 _nums = re.findall(r'\d+', os.path.splitext(os.path.basename(file))[0])
