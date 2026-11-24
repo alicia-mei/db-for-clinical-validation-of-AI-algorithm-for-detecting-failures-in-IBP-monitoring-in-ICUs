@@ -13,7 +13,8 @@ CONV = 250 / 2048            # conversão raw → mmHg
 if len(sys.argv) > 1:
     file = sys.argv[1]
 else:
-    file = "10_10_10_134_20251107_11_22,447_0,253/flush_2.h5"
+    #preencha com o arquivo do flush que desenha analisar (ex: file = "10_10_10_134_20251107_01/flush_1.h5")
+    file = ""
 
 if not os.path.exists(file):
     print(f"Arquivo não encontrado: {file}")
@@ -38,7 +39,8 @@ print(f"Fs original  : {Fs_orig:.1f} Hz  →  Fs upsampled: {Fs_up:.1f} Hz")
 print(f"Amostras orig: {len(sig_mmhg)}  →  upsampled: {len(sig_up)}")
 
 # ─── Detecção de picos e vales ────────────────────────────────────────────────
-prominence = (np.max(sig_up) - np.min(sig_up)) * 0.01
+# Os valores aqui podem ser alterados para mudar a sensibilidade da detecção dos picos e vales
+prominence = (np.max(sig_up) - np.min(sig_up)) * 0.01 
 peaks_idx,   _ = find_peaks( sig_up, prominence=prominence, distance=int(Fs_up * 0.005))
 valleys_idx, _ = find_peaks(-sig_up, prominence=prominence, distance=int(Fs_up * 0.005))
 
