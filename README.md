@@ -120,7 +120,7 @@ Laboratório de Engenharia Biomédica (LEB), Departamento de Engenharia de Telec
 
 ## Funding
 
-Partly funded by the Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), grants 136156/2025-8 and 309464/2022-6.
+Partly funded by the Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), grant 136156/2025-8.
 
 ## License
 
